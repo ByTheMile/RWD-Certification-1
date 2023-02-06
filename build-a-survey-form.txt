@@ -1,0 +1,138 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+       <meta charset="UTF-8">
+      <title>Netflix Registration Form</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <fieldset>
+      <h1 id="title">Netflix Registration Form</h1>
+      <p id ="description"> Thank you for taking your time to register for Netflix
+        <form id="survey-form" name="survey-form">
+          <label id="name-label" for="name">Name<input id="name" name="name" type="text" placeholder="Enter Your Name" required </label>
+          <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Enter Your Email" required </label>
+          <label id="number-label" for="age">Age<input id="number" name="number" type="number" min="13" max="100" placeholder="Age"  required</label>
+          <fieldset>Would you be interested in a premium subcription?
+                <label><input type="radio" name="referral" class="inline" value="referral"/>Yes</label>
+                 <label><input type="radio" name="referral" class="inline" value="referral"/>No</label>
+                  <label><input type="radio" name="referral" class="inline" value="referral"/>Unsure</label>
+       </fieldset>
+        <fieldset>
+            <p>Which option best describes your favorite entertainment interest?</p>
+            <select id="dropdown" name="dropdown">
+            <option value="">Select favorite interest</option>
+            <option value="1">Movies</option>
+            <option value="2">TV-Shows</option>
+            <option value="3">Documentaries</option>
+            <option value="4">Podcasts</option>
+            <option value="5">No preference</option>
+            </select>
+ <p>What is your favorite genre of film?</p>
+            <select id="dropdown" name="dropdown">
+            <option value="">Select favorite genre</option>
+            <option value="1">Horror</option>
+            <option value="2">Romance</option>
+            <option value="3">Comedy</option>
+            <option value="4">Sci-Fi</option>
+            <option value="4">Action</option>
+            <option value="5">Other</option>
+            </select>
+          </fieldset>
+          <fieldset>What are some improvements we could work on?
+              <label for="fps-quality"><input id="fps-quality" name="fps-quality" value="FPS-Quality" type="checkbox" class="inline">FPS Quality</label>
+              <label for="improve">
+              <input id="subcription-elements" name="subscription-elements" value="subscription-elements" type="checkbox" class="inline">Subcription Elements</label>
+               <input id="customer-service-support" name="customer-service-support" value="customer-service-support" type="checkbox" class="inline">Customer Service Support</label>  
+               <br>
+               <br>    
+            <label for="feedback">Provide your feedback:
+          <textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="I really enjoy..."></textarea>
+          </label>
+          </fieldset>
+          <input type="submit" id="submit" value="Submit" />
+        </form>
+    </body>
+   </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(200,10,0);
+  color: white;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid white;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 1px;
+  width: 100%;
+  min-height: 2em;
+    border: 3px solid #0a0a23;
+}
+
+input, textarea {
+  background-color: white;
+  border: 3px solid #0a0a23;
+  color: black;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: rgb(0, 60, 100);
+  border-color: black;
+  color: white;
+}
+
+
+
+
+** end of undefined **
+
